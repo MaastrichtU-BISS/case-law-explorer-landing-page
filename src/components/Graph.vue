@@ -5,9 +5,10 @@
 </template>
 
 <script setup lang="ts">
-import { onMounted } from 'vue';
-import { ref } from 'vue';
+import { onMounted, ref } from 'vue';
 import * as d3 from "d3";
+
+
 
 const graph = ref<{nodes: any[], links: any[]}>();
 const simulation = ref();
@@ -62,26 +63,29 @@ const ticked = () => {
       return d.y;
     });
 }
-function dragstarted(d: { fx: any; x: any; fy: any; y: any; }) {
-  if (!d3.event.active) simulation.value.alphaTarget(0.3).restart();
+function dragstarted(event: any, d: { fx: any; x: any; fy: any; y: any; }) {
+  
+  if (!event.active) simulation.value.alphaTarget(0.3).restart();
   d.fx = d.x;
   d.fy = d.y;
 }
-function dragged(d: { fx: any; fy: any; }) {
-  d.fx = d3.event.x;
-  d.fy = d3.event.y;
+function dragged(event: any, d: { fx: any; fy: any; }) {
+  d.fx = event.x;
+  d.fy = event.y;
 }
-function dragended(d: { fx: null; fy: null; }) {
-  if (!d3.event.active) simulation.value.alphaTarget(0);
+function dragended(event: any, d: { fx: null; fy: null; }) {
+  if (!event.active) simulation.value.alphaTarget(0);
   d.fx = null;
   d.fy = null;
 }
 
 onMounted(() => {
 
+  console.log(d3)
+
   var svg = d3.select("svg");
-  var width = svg.attr("width");
-  var height = svg.attr("height");
+  let width: number = Number.parseFloat(svg.attr("width"));
+  let height: number = Number.parseFloat(svg.attr("height"));
   //intialize data
   graph.value = generateGraph();
   console.log(graph.value)
@@ -91,7 +95,7 @@ onMounted(() => {
       "link",
       d3
         .forceLink()
-        .id(function(d: { name: any; }) {
+        .id(function (d: any) {
           return d.name;
         })
         .links(graph.value.links)
@@ -106,7 +110,7 @@ onMounted(() => {
   .attr("class", "links")
   .selectAll("line")
   .data(graph.value.links)
-  .enter(1)
+  .enter()
   .append("line")
   .attr("stroke-width", function() {
     return 1.5;
@@ -116,9 +120,9 @@ onMounted(() => {
   .append("g")
   .attr("class", "nodes")
   .selectAll("circle")
-  .data(graph.value.nodes)
+  .data<Node>(graph.value.nodes)
   .enter()
-  .append("circle")
+  .append<SVGCircleElement>("circle")
   .attr("r", 6)
   .attr("fill", function() {
     return "#262FA5";
@@ -135,8 +139,6 @@ onMounted(() => {
     simulation.value.alphaTarget(0.1);
   });
 });
- 
-// declare var d3: any; //added after ts convertions
 
 </script>
 <style>
