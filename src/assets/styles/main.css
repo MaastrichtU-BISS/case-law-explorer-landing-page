@@ -9,3 +9,7 @@ body {
 h2 {
   @apply mt-12 text-3xl font-bold text-darkblue tracking-tight;
 }
+
+a {
+  @apply underline;
+}
