@@ -27,7 +27,7 @@
     </div>
     <div class="flex flex-row flex-wrap">
       <div>
-        <h2 class="mt-12 text-3xl font-bold text-darkblue">Huidige ambassadeurs</h2>
+        <h2>Huidige ambassadeurs</h2>
         <div class="flex flex-wrap mt-4">
           <img
             src="./assets/images/UM.svg"

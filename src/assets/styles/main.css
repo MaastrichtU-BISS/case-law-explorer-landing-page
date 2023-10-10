@@ -1,6 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 body {
-    overflow-x: hidden; 
-  }
+  overflow-x: hidden;
+}
+
+h2 {
+  @apply mt-12 text-3xl font-bold text-darkblue tracking-tight;
+}
