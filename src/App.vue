@@ -7,7 +7,6 @@
   <div class="p-6">
     <img
       src="./assets/images/Case Law Explorer logo.svg"
-      class="w-96"
       alt="Case Law Explorer logo"
     />
     <h1 class="text-2xl text-lightblue">
