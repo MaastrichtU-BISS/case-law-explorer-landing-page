@@ -1,7 +1,5 @@
 <template>
-  <div class="ml-auto mr-64">
-    <svg class="mt-4 w-96" width="1400" height="300"></svg>
-  </div>
+  <svg class="mt-4 w-80 lg:w-96" width="1400" height="300"></svg>
 </template>
 
 <script setup lang="ts">

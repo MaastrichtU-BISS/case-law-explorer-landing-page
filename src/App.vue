@@ -42,7 +42,7 @@
           />
         </div>
       </div>
-      <div class="ml-auto mr-64">
+      <div class="lg:ml-96">
         <Graph />
       </div>
     </div>
