@@ -9,7 +9,7 @@
       src="./assets/images/Case Law Explorer logo.svg"
       alt="Case Law Explorer logo"
     />
-    <h1 class="text-2xl text-lightblue">
+    <h1 class="text-3xl text-lightblue">
       Een open-source tool voor juridische netwerkanalyse
     </h1>
     <div class="max-w-5xl mt-16 text-darkblue">
