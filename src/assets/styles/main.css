@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-  overflow-x: hidden;
+  @apply overflow-x-hidden bg-background;
 }
 
 h2 {

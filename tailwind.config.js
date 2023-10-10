@@ -9,6 +9,7 @@ export default {
         lightblue: '#9082B5',
         darkblue: '#262FA5',
         white: '#FFFFFF',
+        background: '#FFF5EB'
       },
       screens: {
         'maxsize': '1440px',
