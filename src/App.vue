@@ -12,7 +12,7 @@
   </div>
   <div class="flex flex-row flex-wrap">
   <div >
-    <h1 class="mt-12 text-3xl font-bold text-darkblue">Huidige ambassadeurs</h1>
+    <h2 class="mt-12 text-3xl font-bold text-darkblue">Huidige ambassadeurs</h2>
     <div class="flex flex-wrap mt-4">
         <img src="./assets/images/UM.svg" class="duration-300 grayscale hover:grayscale-0"  alt="UM logo" />
         <img src="./assets/images/Zuyd.svg" class="ml-4 duration-300 grayscale hover:grayscale-0"  alt="Zuyd logo" />
