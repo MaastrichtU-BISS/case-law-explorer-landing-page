@@ -36,7 +36,7 @@
           </a>
         </div>
       </div>
-      <div class="lg:ml-96">
+      <div class="xl:ml-96">
         <Graph />
       </div>
     </div>
