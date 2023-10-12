@@ -1,11 +1,11 @@
 <template>
   <img
-    src="./assets/images/magnifying glass.svg"
+    src="./assets/images/magnifying-glass.svg"
     class="absolute hidden max-w-xl m-auto -top-4 -right-40 maxsize:block"
     alt="Magnifying Glass"
   />
   <div class="p-6">
-    <img src="./assets/images/Case Law Explorer logo.svg" alt="Case Law Explorer logo" />
+    <img src="./assets/images/Case-Law-Explorer-logo.svg" alt="Case Law Explorer logo" />
     <h1 class="text-3xl text-lightblue">
       A software application for conducting network analysis on court cases
     </h1>
