@@ -41,7 +41,7 @@
     </div>
 
     <div class="flex flex-row flex-wrap">
-      <div class="w-1/2">
+      <div class="w-full md:w-1/2">
         <h2>Current ambassadors</h2>
         <div class="flex flex-wrap mt-4">
           <a href="https://www.maastrichtuniversity.nl/">
@@ -60,11 +60,11 @@
           </a>
         </div>
       </div>
-      <div class="w-1/2">
+      <div class="w-full md:w-1/2">
         <h2>The tool</h2>
         <img
           src="./assets/images/network.jpg"
-          class="w-3/4 mt-4"
+          class="w-full xl:w-3/4 mt-4"
           alt="The Case Law Explorer tool showing a network graph of related legal cases"
         />
       </div>
