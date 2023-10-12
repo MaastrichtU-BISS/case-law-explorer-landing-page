@@ -1,9 +1,14 @@
 <template>
-  <img
-    src="./assets/images/magnifying-glass.svg"
-    class="absolute hidden max-w-xl m-auto -top-4 -right-40 maxsize:block"
-    alt="Magnifying Glass"
-  />
+  <div class="absolute max-w-xl m-auto -top-4 -right-40 hidden maxsize:grid">
+    <img
+      src="./assets/images/magnifying-glass.svg"
+      class="select-none row-start-1 col-start-1"
+      alt="Magnifying Glass"
+    />
+    <div class="row-start-1 col-start-1 mt-6 ml-6">
+      <Graph />
+    </div>
+  </div>
   <div class="p-6">
     <img src="./assets/images/Case-Law-Explorer-logo.svg" alt="Case Law Explorer logo" />
     <h1 class="text-3xl text-lightblue">
@@ -17,7 +22,7 @@
       />
     </div>
     <div class="flex flex-row flex-wrap">
-      <div>
+      <div class="w-1/2">
         <h2>Current ambassadors</h2>
         <div class="flex flex-wrap mt-4">
           <a href="https://www.maastrichtuniversity.nl/">
@@ -36,8 +41,13 @@
           </a>
         </div>
       </div>
-      <div class="xl:ml-96">
-        <Graph />
+      <div class="w-1/2">
+        <h2>The tool</h2>
+        <img
+          src="./assets/images/network.jpg"
+          class="w-3/4"
+          alt="The Case Law Explorer tool showing a network graph of related legal cases"
+        />
       </div>
     </div>
   </div>
