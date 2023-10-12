@@ -121,6 +121,7 @@ onMounted(() => {
     .attr("fill", function () {
       return "#262FA5";
     })
+    // @ts-ignore
     .call(d3.drag().on("start", dragstarted).on("drag", dragged).on("end", dragended));
 
   setInterval(() => {
