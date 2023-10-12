@@ -14,7 +14,7 @@
     <h1 class="text-3xl text-lightblue">
       A software application for conducting network analysis on court cases
     </h1>
-    <div class="max-w-5xl mt-16 text-darkblue">
+    <div class="max-w-5xl mt-14 text-darkblue">
       <Section title="About" :text="about" />
       <Section
         title="Community"
@@ -45,7 +45,7 @@
         <h2>The tool</h2>
         <img
           src="./assets/images/network.jpg"
-          class="w-3/4"
+          class="w-3/4 mt-4"
           alt="The Case Law Explorer tool showing a network graph of related legal cases"
         />
       </div>
