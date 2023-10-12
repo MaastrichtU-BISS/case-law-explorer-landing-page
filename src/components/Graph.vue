@@ -1,5 +1,5 @@
 <template>
-  <svg class="mt-4 w-80 lg:w-96" width="1400" height="300"></svg>
+  <svg class="w-80 lg:w-96" width="1400" height="400"></svg>
 </template>
 
 <script setup lang="ts">
