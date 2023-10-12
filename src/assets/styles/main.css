@@ -10,6 +10,6 @@ h2 {
   @apply mt-10 text-3xl font-bold text-darkblue tracking-tight;
 }
 
-a {
+p a {
   @apply underline;
 }
