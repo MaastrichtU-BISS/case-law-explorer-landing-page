@@ -14,6 +14,9 @@ export default {
       screens: {
         'maxsize': '1440px',
       },
+      fontFamily: {
+        'inter': ['Inter', 'sans-serif'],
+      },
     },
   },
   plugins: [],
