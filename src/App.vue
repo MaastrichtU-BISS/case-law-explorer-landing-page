@@ -18,18 +18,11 @@
     <div class="max-w-5xl mt-14 text-darkblue">
       <Section title="About" :text="about" />
       <div class="flex flex-col md:flex-row gap-5 mt-3">
-        <a href="https://maastrichtlawtech.github.io/case-explorer-ui/#/userguide/">
+        <a href="https://app.caselawexplorer.tech">
           <button
             class="bg-lightblue border-lightblue border-2 hover:bg-darkblue hover:border-darkblue text-white font-bold rounded p-4 uppercase flex items-center justify-center gap-2 select-none"
           >
-            How to get started <span class="text-2xl h-[36px]">→</span>
-          </button>
-        </a>
-        <a href="https://maastrichtlawtech.github.io/case-law-explorer/#/">
-          <button
-            class="border-lightblue border-2 text-lightblue hover:border-darkblue hover:text-darkblue font-bold rounded p-4 uppercase select-none h-full"
-          >
-            Documentation
+            Try it out <span class="text-2xl h-[36px]">→</span>
           </button>
         </a>
       </div>
