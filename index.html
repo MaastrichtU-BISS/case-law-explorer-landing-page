@@ -5,6 +5,16 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="canonical" href="https://www.caselawexplorer.tech/" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Only load analytics in production -->
+    <script>
+      if (window.location.hostname !== 'localhost' && window.location.hostname !== '127.0.0.1') {
+      const script = document.createElement('script');
+      script.defer = true;
+      script.src = 'https://analytics.biss-institute.com/script.js';
+      script.setAttribute('data-website-id', 'c2d75b52-77a3-4902-8822-629170e82bed');
+      document.head.appendChild(script);
+      }
+    </script>
     <title>Case Law Explorer</title>
   </head>
   <body>
